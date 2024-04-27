@@ -1,0 +1,14 @@
+body {
+    background-color: #292929;
+}
+
+input {
+    width: 100%;
+    color: white;
+    border: white solid 1px;
+    border-radius: 4px;
+    padding: 4px;
+    font-size: large;
+    background-color: #1a1919;
+    margin-bottom: 10px;
+}
