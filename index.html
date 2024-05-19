@@ -2,8 +2,38 @@
 <link rel="stylesheet" href="style.css">
 <script>document.addEventListener("DOMContentLoaded", ready);</script>
 <title>Tekken: text to input</title>
-<input type="text" placeholder="f 5 , 3 4 , b 2 4 3 , f 4 1 , f 5 , 2+3 , f f+ 3 , f f+ 3" id="inputText">
+<fieldset>
+    <legend> Legend: </legend>
+    <PRE> 
+        "( something )" - FOR COMMENTARY
+        "[ something ]" - for fast input
+
+        "1" "2" "3" "4" - for input attack
+        combine this with "+" like "2+4"
+
+        b - back
+        f - forward
+        d - down
+        u - up
+        
+        ub u uf
+        b  5  f  - for move inputs and ("+" for hold input like "df+")
+        db d df 
+    </PRE>
+</fieldset>
+<br>
+<div class="left">
+<label for="globalWrap">globalWrap:</label>
+<input type="checkbox" name="globalWrap" id="globalWrap">
+</div>    
+<br>
+<input type="text" value="" placeholder="f 5 , 3 4 , b 2 4 3 , f 4 1 , f 5 , 2+3 , f f+ 3 , f f+ 3" id="inputText">
 <div id="output">
     
+
 </div>
 
+<script>
+    text = document.querySelector("#inputText").value
+    document.querySelector("#output").innerHTML = tekken8parse(text)
+</script>

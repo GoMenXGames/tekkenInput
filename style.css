@@ -1,8 +1,41 @@
 body {
+    color: white;
     background-color: #292929;
 }
 
-input {
+PRE {
+    margin: 0px;
+}
+
+#output {
+    display: inline;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+div.left {
+    display: flex;
+}
+
+div.text {
+    font-size: 80px;
+    font-stretch: condensed;
+    font-family: "Arial";
+    text-align: center;
+    display: inline;
+    font-weight: bold;
+}
+
+/* div.text + div.text {
+    padding-left: 0.4em;
+} */
+
+div.text + img, img + .text {
+    padding-left: 10px;
+}
+
+
+#inputText {
     width: 100%;
     color: white;
     border: white solid 1px;
